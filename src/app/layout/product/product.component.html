@@ -1,1 +1,8 @@
 <p>product works!</p>
+
+<p *ngFor="let product of products$ | async">{{product.id}} , {{product.pvp}}</p>
+
+<button (click)="create()">Create</button>
+<button (click)="update()">update</button>
+<button (click)="delete()">delete</button>
+<input type="number">
